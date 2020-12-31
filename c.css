@@ -1,0 +1,241 @@
+@font-face {
+   font-family: 'Monda';
+   font-style: normal;
+   font-weight: 400;
+   src: url("charcoal.ttf");
+  }
+  *{
+    font-family: 'Monda';
+    font-size:12px;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  a.links{
+    font-size: 13px;
+    display: inline-block;
+    color: #090909;
+    background-color: #dcdcdc;
+    border-radius: 4px;
+    border: 1px solid #090909;
+    padding: 1px 12px 1px 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: inset 1px 1px 0px #dddddd, inset 2px 2px 0px #ffffff, inset -1px -1px 0px #777777, inset -2px -2px 0px #aaaaaa;
+  }
+  a.links:active
+  {
+    color: #fefefe;
+    background-color: #666666;
+    box-shadow: inset 1px 1px 0px #444444, inset 2px 2px 0px #555555, inset -1px -1px 0px #888888, inset -2px -2px 0px #777777;
+  }
+  li{
+    display: block;
+	padding-top: 15px;
+	width: 100%;
+  }
+::-webkit-scrollbar {
+  width: 16px;
+    max-height:599px;
+}
+::-webkit-scrollbar-corner {
+    background-color: #cccccc;
+    box-shadow: inset 1px 1px 0px #ffffff, 1px 1px 0px #cccccc;
+}
+ 
+::-webkit-scrollbar-resizer {
+    background-color: #777777;
+}
+::-webkit-scrollbar-track:vertical {
+  background: #aaaaaa;
+  border: 1px solid #090909;
+  box-shadow: inset 1px 1px 0px #777777, inset -1px 0px 0px #cccccc, inset 2px 2px 0px #888888, inset -2px 0px 0px #bbbbbb;
+}
+::-webkit-scrollbar-track:horizontal {
+  background: #aaaaaa;
+  border: 1px solid #090909;
+  box-shadow: inset 1px 1px 0px #777777, inset 0px -1px 0px #cccccc, inset 2px 2px 0px #888888, inset 0px -2px 0px #bbbbbb;
+}
+::-webkit-scrollbar-thumb:vertical {
+  background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/scrollv.png?attredirects=0&d=1);
+  background-repeat: no-repeat;
+    background-position: center; 
+  background-color: #9999ff;
+  border: 1px solid #090909;
+  box-shadow: inset 1px 1px 0px #ccccff, inset -1px -1px 0px #6666cc, 0px 2px 0px -1px #777777, 0px 4px 0px -2px #888888;
+}
+::-webkit-scrollbar-thumb:vertical:active {
+  background-color: #6666cc; 
+  box-shadow: inset 1px 1px 0px #9999ff, inset -1px -1px 0px #333399, 0px 2px 0px -1px #777777, 0px 4px 0px -2px #888888;
+}
+::-webkit-scrollbar-thumb:horizontal {
+    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/scrollh.png?attredirects=0&d=1);
+  background-repeat: no-repeat;
+    background-position: center;
+  background-color: #9999ff;
+  border: 1px solid #090909;
+  box-shadow: inset 1px 1px 0px #ccccff, inset -1px -1px 0px #6666cc, 2px 0px 0px -1px #777777, 4px 0px 0px -2px #888888;
+}
+::-webkit-scrollbar-thumb:horizontal:active {
+    background-color: #6666cc; 
+  box-shadow: inset 1px 1px 0px #9999ff, inset -1px -1px 0px #333399, 2px 0px 0px -1px #777777, 4px 0px 0px -2px #888888;
+}
+::-webkit-scrollbar-button{
+ visibility: visible;
+    background-color: #dddddd;
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #bbbbbb;
+}
+::-webkit-scrollbar-button:vertical {
+ border-left: 1px solid #090909;
+    border-right: 1px solid #090909;
+    height:15px;
+}
+::-webkit-scrollbar-button:horizontal {
+ border-top: 1px solid #090909;
+    border-bottom: 1px solid #090909;
+    width:15px;
+}
+::-webkit-scrollbar-button:vertical:decrement{
+ border-top: 1px solid #090909;
+    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Up.png?attredirects=0&d=1);
+}
+::-webkit-scrollbar-button:vertical:increment{
+ border-bottom: 1px solid #090909;
+    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Down.png?attredirects=0&d=1);
+}
+::-webkit-scrollbar-button:horizontal:decrement{
+ border-left: 1px solid #090909;
+    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Left.png?attredirects=0&d=1);
+}
+::-webkit-scrollbar-button:horizontal:increment{
+ border-right: 1px solid #090909;
+    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Right.png?attredirects=0&d=1);
+}
+::-webkit-scrollbar-button:active{
+ background-color: #777;
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: inset 1px 1px 0px #555, inset -1px -1px 0px #999;
+}
+.titlebar {
+	display: flex;
+	height: 16px;
+	width: 100%;
+}
+	.titlebar div.button {
+		width: 9px;
+		height: 9px;
+		border: 1px solid rgb(33,33,33);
+		background-image: linear-gradient(-45deg, #ffffff, rgb(239,239,239), rgb(222,222,222), rgb(206,206,206), rgb(189,189,189), rgb(173,173,173), rgb(156,156,156));
+		box-shadow: inset 1px 1px #CECECE, inset -1px -1px #8C8C8C, 0px 1px #ffffff, 1px 1px #ffffff, 1px 0px #ffffff, -0px -1px #8C8C8C, -1px -1px #8C8C8C, -1px -0px #8C8C8C;
+		display: inline-block;
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+		.titlebar div.button:active {
+			background-image: linear-gradient(135deg, #444444, rgb(85,85,85), rgb(102,102,102), rgb(119,119,119), rgb(136,136,136), rgb(153,153,153), rgb(170,170,170));
+			box-shadow: inset -1px -1px 0px #999999, .75px .75px 0px .5px #ffffff, -.75px -.75px 0px .5px #8C8C8C;
+		}
+	.titlebar div.title {
+		height: 12px;
+		background: repeating-linear-gradient(0deg,#707070,#707070 1px,#ffffff 1px,#ffffff 2px);
+		font-size: 13px;
+		text-align: center;
+		width: 100%;
+		margin: -1px 5px 0px 5px;
+		min-width: 200px;
+		border-right: 1px dotted #cccccc;
+		border-left: 1px dotted #cccccc;
+	}
+		.titlebar span {
+		flex-shrink: 0;
+		flex-grow: 0;
+		margin-top: -3px;
+	}
+
+img.prev {
+	display: block;
+	margin: 0 auto;
+	padding: 15px 15px 15px 15px;
+	border:1px solid #090909;
+	box-shadow: -1px -1px 0px #888, 1px 1px 0px #fff;
+	background-color: #fff;
+	max-width:50%;
+}
+
+.logo {
+	background-color:#eee;
+	width:30%;
+	min-width: 250px;
+	box-shadow: inset -1px -1px 0px #999, inset -2px -2px 0px #bbb, inset 1px 1px 0px #ccc, inset 2px 2px 0px #fff;
+	border-right:1px solid #000000; 
+	background-image: url("https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/erty.png?attredirects=0&d=1");
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	flex-shrink:0;
+}
+
+a.links:not([href]) {
+	box-shadow: none;
+	background: #bbb;
+	border: 1px solid #777;
+	pointer-events: none;
+}
+
+#Main {
+	border: 1px solid #090909;
+	background-color: #ccc;
+	color: #090909;
+	box-shadow: 2px 2px 0px #090909, inset 1px 1px 0px #fff, inset -1px -1px 0px #999;
+	padding: 4px 4px 4px 4px;
+	display:flex;
+	flex-direction: column;
+	width:calc(100% - 10px);
+	height:calc(100% - 10px);
+	top:0px;
+	left:0px;
+	position:absolute;
+}
+
+#Sub {
+	background-color: #dcdcdc;
+	border: 1px solid #010101;
+	box-shadow: 1px 1px 0px #f3f3f3, -1px -1px 0px #8e8e8e;
+	display:flex;
+	overflow:auto;
+	height:100%;
+}
+
+body {
+	background-image: url("img/OS9.jpg");
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	display: flex;
+	margin:0;
+}
+
+.divider {
+	border-top: 1px solid #090909;
+	margin-left:-20px;
+	margin-right:20px;
+	text-align:right;
+}
+
+ul {
+	list-style:none;
+	overflow:auto;
+	height:100%;
+	margin:auto;
+	width:100%;
+	display: grid;
+	align-items: center;
+}
