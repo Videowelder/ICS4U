@@ -1,268 +1,108 @@
-<style>
-   @font-face {
-   font-family: 'Monda';
-   font-style: normal;
-   font-weight: 400;
-   src: url("https://videowelder.github.io/videowelder.xyz/Charcoal.ttf");
-  }
-  *{
-    font-family: 'Monda';
-    font-size:12px;
-      -webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  a.links{
-    font-size: 13px;
-    display: inline-block;
-    color: #090909;
-    background-color: #dcdcdc;
-    border-radius: 4px;
-    border: 1px solid #090909;
-    padding: 1px 12px 1px 12px;
-    text-align: center;
-    text-decoration: none;
-    box-shadow: inset 1px 1px 0px #dddddd, inset 2px 2px 0px #ffffff, inset -1px -1px 0px #777777, inset -2px -2px 0px #aaaaaa;
-  }
-  a.links:active
-  {
-    color: #fefefe;
-    background-color: #666666;
-    box-shadow: inset 1px 1px 0px #444444, inset 2px 2px 0px #555555, inset -1px -1px 0px #888888, inset -2px -2px 0px #777777;
-  }
-  li{
-    display:block;
-    padding:15px 20px 0px 0px;
-  }
-::-webkit-scrollbar {
-  width: 16px;
-    max-height:599px;
-}
-::-webkit-scrollbar-corner {
-    background-color: #cccccc;
-    box-shadow: inset 1px 1px 0px #ffffff, 1px 1px 0px #cccccc;
-}
- 
-::-webkit-scrollbar-resizer {
-    background-color: #777777;
-}
-::-webkit-scrollbar-track:vertical {
-  background: #aaaaaa;
-  border: 1px solid #090909;
-  box-shadow: inset 1px 1px 0px #777777, inset -1px 0px 0px #cccccc, inset 2px 2px 0px #888888, inset -2px 0px 0px #bbbbbb;
-}
-::-webkit-scrollbar-track:horizontal {
-  background: #aaaaaa;
-  border: 1px solid #090909;
-  box-shadow: inset 1px 1px 0px #777777, inset 0px -1px 0px #cccccc, inset 2px 2px 0px #888888, inset 0px -2px 0px #bbbbbb;
-}
-::-webkit-scrollbar-thumb:vertical {
-  background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/scrollv.png?attredirects=0&d=1);
-  background-repeat: no-repeat;
-    background-position: center; 
-  background-color: #9999ff;
-  border: 1px solid #090909;
-  box-shadow: inset 1px 1px 0px #ccccff, inset -1px -1px 0px #6666cc, 0px 2px 0px -1px #777777, 0px 4px 0px -2px #888888;
-}
-::-webkit-scrollbar-thumb:vertical:active {
-  background-color: #6666cc; 
-  box-shadow: inset 1px 1px 0px #9999ff, inset -1px -1px 0px #333399, 0px 2px 0px -1px #777777, 0px 4px 0px -2px #888888;
-}
-::-webkit-scrollbar-thumb:horizontal {
-    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/scrollh.png?attredirects=0&d=1);
-  background-repeat: no-repeat;
-    background-position: center;
-  background-color: #9999ff;
-  border: 1px solid #090909;
-  box-shadow: inset 1px 1px 0px #ccccff, inset -1px -1px 0px #6666cc, 2px 0px 0px -1px #777777, 4px 0px 0px -2px #888888;
-}
-::-webkit-scrollbar-thumb:horizontal:active {
-    background-color: #6666cc; 
-  box-shadow: inset 1px 1px 0px #9999ff, inset -1px -1px 0px #333399, 2px 0px 0px -1px #777777, 4px 0px 0px -2px #888888;
-}
-::-webkit-scrollbar-button{
- visibility: visible;
-    background-color: #dddddd;
-    background-repeat: no-repeat;
-    background-position: center; 
-    box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #bbbbbb;
-}
-::-webkit-scrollbar-button:vertical {
- border-left: 1px solid #090909;
-    border-right: 1px solid #090909;
-    height:15px;
-}
-::-webkit-scrollbar-button:horizontal {
- border-top: 1px solid #090909;
-    border-bottom: 1px solid #090909;
-    width:15px;
-}
-::-webkit-scrollbar-button:vertical:decrement{
- border-top: 1px solid #090909;
-    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Up.png?attredirects=0&d=1);
-}
-::-webkit-scrollbar-button:vertical:increment{
- border-bottom: 1px solid #090909;
-    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Down.png?attredirects=0&d=1);
-}
-::-webkit-scrollbar-button:horizontal:decrement{
- border-left: 1px solid #090909;
-    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Left.png?attredirects=0&d=1);
-}
-::-webkit-scrollbar-button:horizontal:increment{
- border-right: 1px solid #090909;
-    background-image: url(https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/Right.png?attredirects=0&d=1);
-}
-::-webkit-scrollbar-button:active{
- background-color: #777777;
-    background-repeat: no-repeat;
-    background-position: center; 
-    box-shadow: inset 1px 1px 0px #555555, inset -1px -1px 0px #999999;
-}
-.xbuttons
-  {
-    width:11px;
-    height:11px;
-    border:1px solid #090909;
-    background-image: linear-gradient(-45deg, #ffffff, rgb(239,239,239), rgb(222,222,222), rgb(206,206,206), rgb(189,189,189), rgb(173,173,173), rgb(156,156,156));
-    box-shadow: inset 1px 1px 0px #CECECE, inset -1px -1px 0px #8C8C8C, .75px .75px 0px .5px #ffffff, -.75px -.75px 0px .5px #8C8C8C;
-  }
-    .xbuttons:active{
-    background-image: linear-gradient(135deg, #444444, rgb(85,85,85), rgb(102,102,102), rgb(119,119,119), rgb(136,136,136), rgb(153,153,153), rgb(170,170,170));
-    box-shadow: inset -1px -1px 0px #999999, .75px .75px 0px .5px #ffffff, -.75px -.75px 0px .5px #8C8C8C;
-</style>
-<div id="Main" style="text-align: center; border: 1px solid #090909;background-color: #cccccc;color: #090909;box-shadow: 2px 2px 0px #090909, inset 1px 1px 0px #ffffff, inset -1px -1px 0px #999999;padding: 4px 4px 4px 4px"> 
-  <table style="border-collapse: collapse;height:12px;width:100%;">
-    <tr>
-      <td style="width:15px"><a class="xbuttons" style="position:absolute;margin-top:-8px;display:block;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home"></a></td>
-      <td> <div style="height:14px;width:100%;background: repeating-linear-gradient(0deg,#707070,#707070 1px,#ffffff 1px,#ffffff 2px);margin-top:-4px;margin-left:1px;"></div></td>
-      <td style="font-size:13px;text-align:center;width:5%;vertical-align:text-top;height:12px;">S2</td>
-      <td> <div style="height:14px;width:100%;background: repeating-linear-gradient(0deg,#707070,#707070 1px,#ffffff 1px,#ffffff 2px);margin-top:-4px;margin-left:1px;"></div></td>
-      <td style="width:34px;text-align:right;"><div onclick="ToggleFls()" class="xbuttons" style="display:inline-block;"><div style="width:6px;height:6px;border-right:1px solid #090909;border-bottom:1px solid #090909;"></div></div> <div onclick="ToggleDisp()" class="xbuttons" style="display:inline-block;"><div style="height:1px;border-top:1px solid #090909;border-bottom:1px solid #090909;transform: translate(0%,125%);"></div></div></td>
-    </tr>
-  </table> 
-  <div id="Sub" style="display:block;max-height:700px;background-color: #dcdcdc;bottom:3px;border: 1px solid #010101;box-shadow: 1px 1px 0px #f3f3f3, -1px -1px 0px #8e8e8e;">
-    <table style="border-collapse: collapse;">
-      <tr>
-        <td style="background-color:#eeeeee;width:400px;box-shadow: inset -1px -1px 0px #999999, inset -2px -2px 0px #bbbbbb, inset 1px 1px 0px #cccccc, inset 2px 2px 0px #ffffff;border-right:1px solid #000000;">
-     <img src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/erty.png?attredirects=0&d=1" alt="Litz OS 9.1" width="400" height="400" ondragstart="return false;">
-      </td>
-        <td style="width:100%;">
-          <div style="max-height: 600px;width:100%;overflow:auto;">
-          <ul>
-            <li>
-        <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Rubric</b></div><br/>
-          <a ondragstart="return false;" class="links" style="width: 65%;" href="https://docs.google.com/document/d/1OW_QIZbvEYbBohSBgIAUNzKKvXqDQa1zEXOUsrbUvf0/edit?usp=sharing">Open doc</a>
-        </div>
-      </li>
-      <li>
-        <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.1</b></div><br/>
-          <img ondragstart="return false;" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.1.GIF?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.xxqw7yqbg9yc">Code</a>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S21.jar?attredirects=0&d=1">JAR Buid</a> 
-          <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1kEU7GWjMxZggp-u_qbd-pBTt3j5w53WA?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-      <li>
-        <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.2</b></div><br/>
-        <img ondragstart="return false;" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.2.GIF?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.oyqb361y6pb">Code</a>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S22.jar?attredirects=0&d=1">JAR Buid</a>
-          <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1w7lDrgg0hBXCGUzVYGng5u1gh136nABh?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-      <li>
-       <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.3</b></div><br/>
-        <img ondragstart="return false;" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.3.GIF?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.5q2y4ynzxxci">Code</a>
-         <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S23.jar?attredirects=0&d=1">JAR Buid</a> 
-         <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1mzX6vZJXUGX5QDynH2iNeBvd_DGWcBou?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-            <li>
-       <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.4</b></div><br/>
-        <img ondragstart="return false;" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.4.GIF?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.wt7ia9efp7i4">Code</a>
-         <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S24.jar?attredirects=0&d=1">JAR Buid</a>  
-         <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1tZWexLR3F4V_f6nytnoA3-YmElzWyVG4?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-            <li>
-        <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.5</b></div><br/>
-        <img ondragstart="return false;" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.5.gif?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.11q8oxu13qg9">Code</a>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S25.jar?attredirects=0&d=1">JAR Buid</a> 
-          <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1yW1zfSoP_LRu6Cd5k7Eu_t7I4SSxRsrU?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-            <li>
-        <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.6</b></div><br/>
-        <img ondragstart="return false;" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.6.gif?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.r6fdzx3wq0bn">Code</a>
-          <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1iIxm6t-ViqSNbWdv0zAjQodsqD266ghg?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-            <li>
-        <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.7</b></div><br/>
-        <img ondragstart="return false;" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.7.gif?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.f54bilaw5n0g">Code</a>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S27.jar?attredirects=0&d=1">JAR Buid</a> 
-          <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1Kvz3XiPoTLzYMnL9LsvKvu9RoIdCVS4f?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-            <li>
-       <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.8</b></div><br/>
-        <img ondragstart="return false;" width="470" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.8.gif?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=id.y3i6g9njdey5">Code</a>
-         <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S28.jar?attredirects=0&d=1">JAR Buid</a> 
-         <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1K8QXuBF2PTPONfwWeYhtlP46lVpTN5TX?usp=sharing">Project Folder</a>
-        </div>
-      </li>
-            <li>
-              <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-          <div style="text-align:left;"><b>Assignment 2.9</b></div><br/>
-        <img ondragstart="return false;" width="470" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.9.gif?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=kix.dvy5u6e54hco">Code</a>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S29.jar?attredirects=0&d=1">JAR Buid</a> 
-          <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1H6Ht0zir5vD3TlF2YLAzCSz_olKhbhY1?usp=sharing">Project Folder</a>
-        </div>
-            </li>
-            <li>
-              <div style="border-top: 1px solid #090909;margin-left:-20px;text-align:right;">
-                <div style="text-align:left;"><b>Assignment 2.10 / 2.11</b></div><br/>
-        <img ondragstart="return false;" width="470" src="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/2.10.gif?attredirects=0&d=1" style="display: block;margin: 0 auto;padding: 15px 15px 15px 15px;border:1px solid #090909;box-shadow: -1px -1px 0px #888888, 1px 1px 0px #ffffff;background-color: #ffffff;"/><br/>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://docs.google.com/document/d/1qaSm3Lgt-UVH0eiXvudtNrfUc8YKY_5wkVI4SWmZgoU/edit#bookmark=kix.dba4u1dl2a8b">Code</a>
-          <a ondragstart="return false;" class="links" style="width: 55px;" href="https://sites.google.com/a/ocsbstudent.ca/videowelder-xyz/home/files/S210.jar?attredirects=0&d=1">JAR Buid</a> 
-          <a ondragstart="return false;" class="links" style="width: 115px;" href="https://drive.google.com/drive/folders/1gkuiROu9P2s5aFzXqOz1XARXVzHuelaS?usp=sharing">Project Folder</a>
-        </div>
-            </li>
-          </ul>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>S2</title>
+	<link rel="stylesheet" type="text/css" href="../c.css">
+</head>
+<body>
+<div id="Main" style="max-width:1000px;max-height:480px">
+	<div class="titlebar">
+		<div class="button" onclick="Close()"></div>
+		<div class="title"></div>
+		<span>Section 2</span>
+		<div class="title"></div>
+		<div class="button" onclick="ToggleFls()" style="margin-right:5px;">
+			<div style="height:2px;border-top:1px solid #090909;transform: translate(0%,100%);"></div>
+		</div>
+		<div class="button" onclick="ToggleDisp()">
+			<div style="height:1px;border-top:1px solid #090909;border-bottom:1px solid #090909;transform: translate(0%,100%);"></div>
+		</div>
+	</div>
+	<div id="Sub">
+		<div class="logo"></div>
+		<ul>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.1</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.1.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.1/S21.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.1" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.2</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.2.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.2/S22.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.2" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.3</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.3.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.3/S23.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.3" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.4</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.4.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.4/S24.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.4" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.5</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.5.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.5/S25.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.5" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.6</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.6.gif" class="prev"/><br/>
+					<a ondragstart="return false;" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.6" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.7</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.7.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.7/S27.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.7" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.8</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.8.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.8/S28.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.8" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.9</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.9.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.9/S29.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.9" class="links" style="width: 55px;">Code</a>
+				</div>
+			</li>
+			<li>
+				<div class="divider">
+					<div style="text-align:left;"><b>Assignment 2.10 / 2.11</b></div><br/>
+					<img ondragstart="return false;" src="../img/2.10.gif" class="prev"/><br/>
+					<a ondragstart="return false;" href="2.10/S210.jar" class="links" style="width: 55px;">JAR</a>
+					<a ondragstart="return false;" href="2.10" class="links" style="width: 55px;">Code</a>
+				</div>
+				<br/>
+			</li>
+		</ul>
+	</div>
 </div>
-<script>
-  function ToggleDisp(){
-    if (document.getElementById("Sub").style.display == "block"){
-      document.getElementById("Sub").style.display = "none";
-      document.getElementById("Main").style.padding = "4px 4px 0px 4px";
-    } else if (document.getElementById("Sub").style.display == "none"){
-      document.getElementById("Sub").style.display = "block";
-      document.getElementById("Main").style.padding = "4px 4px 4px 4px";
-    }
-  }
-</script>
+<script rel="script" type="text/javascript" src="../win.js"></script>
+</body>
